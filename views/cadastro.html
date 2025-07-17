@@ -7,22 +7,27 @@
     <title>Cadastro</title>
 </head>
 <body>
-    <div class="container">
+    <div class="content">
         <h1>Cadastro</h1>
         <form action="../back/cadastro.php" method="post" class="form-group">
-            <label>Nome</label>
-            <input type="text" name="nomeuser" id="">
-            <label>CPF</label>
-            <input type="text" name="cpfuser" id="">
-            <label>Telefone</label>
-            <input type="text" name="telefoneuser" id="">
-            <label>E-mail</label>
-            <input type="text" name="emailuser" id="">
-            <label>Senha</label>
-            <input type="password" name="passuser" id="">
-            <button type="submit">Cadastrar</button>
+            <div class="input-box">
+                <input type="text" name="nomeuser" placeholder="Nome" minlength="8" required>
+            </div>
+            <div class="input-box">
+                <input type="text" name="cpfuser" id="" placeholder="CPF" minlength="11" maxlength="11" required>
+            </div>
+            <div class="input-box">
+                <input type="text" name="telefoneuser" placeholder="Telefone" maxlength="15" required>
+            </div>
+            <div class="input-box">
+                <input type="text" name="emailuser" placeholder="E-mail" min="10" required>
+            </div>
+            <div class="input-box">
+                <input type="password" name="passuser" id="" placeholder="Senha" min="8" required>
+            </div>
+            <button type="submit" id="submit">Cadastrar</button>
         </form>
-        <a href="login.html">Já se cadastrou? Entre!</a>
+        <p>Já se cadastrou? <a href="login.html"><strong>Entre!</strong></a></p>
     </div>
 </body>
 </html>

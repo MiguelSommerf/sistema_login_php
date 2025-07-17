@@ -15,7 +15,7 @@ if (!isset($_SESSION['id'])) {
     <title>Home</title>
 </head>
 <body>
-    <div class="container">
+    <div class="video">
         <h1>Bem-vindo(a)!</h1>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/kI_610DtihA?si=MCOEZh_gscKp_wEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>

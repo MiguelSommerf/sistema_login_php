@@ -7,16 +7,23 @@
     <title>Login</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Login</h1>
-        <form action="../back/login.php" method="post" class="form-group">
-            <label>E-mail</label>
-            <input type="text" name="emailuser" id="">
-            <label>Senha</label>
-            <input type="password" name="passuser" id="">
-            <button type="submit">Logar</button>
-        </form>
-        <a href="cadastro.html">Ainda não se cadastrou? Cadastre-se!</a>
-    </div>
+    <main>
+        <div class="content">
+            <h1>Login</h1>
+            <form action="../back/login.php" method="post" class="form-group">
+                <div class="input-box">
+                    <input type="text" name="emailuser" placeholder="E-mail" required>
+                    <span><i class="fa-solid fa-user"></i></span>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="passuser" placeholder="Senha" required>
+                    <span><i class="fa-solid fa-lock"></i></span>
+                </div>
+                <button type="submit" id="submit">Logar</button>
+            </form>
+            <p>Ainda não se cadastrou? <a href="cadastro.html"><strong>Cadastre-se!</strong></a></p>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/5350f19675.js" crossorigin="anonymous"></script>
 </body>
 </html>
